@@ -1,52 +1,56 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>联系我们 — 情侣飞行棋 | Couple Air Chess</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>联系我们 — 情侣飞行棋 | Couple Air Chess</title>
+  <meta name="description" content="联系我们获取产品报价、定制服务与批发信息。请在部署前将 WhatsApp 占位链接替换为你的真实号码。" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<a class="brand" href="index.html">情侣飞行棋</a>
-<nav class="nav">
-<a href="index.html">首页</a>
-<a href="product.html">产品</a>
-<a href="about.html">关于</a>
-<a href="contact.html">联系我们</a>
-</nav>
-<div class="lang-switch">
-<button id="lang-zh" class="lang-btn">中文</button>
-<button id="lang-en" class="lang-btn">EN</button>
-</div>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">情侣飞行棋</a>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home">首页</a>
+        <a href="product.html" data-i18n="nav_product">产品</a>
+        <a href="about.html" data-i18n="nav_about">关于</a>
+        <a href="contact.html" data-i18n="nav_contact">联系我们</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="lang-zh" class="lang-btn">中文</button>
+        <button id="lang-en" class="lang-btn">EN</button>
+      </div>
+    </div>
+  </header>
 
-<main class="container contact-page">
-<h1>联系我们</h1>
-<p>了解报价、批发与定制请通过以下方式联系：</p>
+  <main class="container contact-page">
+    <h1 data-i18n="contact_title">联系我们</h1>
+    <p data-i18n="contact_p">了解报价、批发与定制请通过以下方式联系（部署前请替换占位链接为真实号码）：</p>
 
-<div class="contact-cards">
-<div class="card">
-<h3>WhatsApp</h3>
-<p>点击按钮打开 WhatsApp 聊天。</p>
-<a class="btn" href="https://wa.me/8617316895054" target="_blank">Open WhatsApp</a>
-</div>
+    <div class="contact-cards">
+      <div class="card">
+        <h3 data-i18n="contact_whatsapp">WhatsApp</h3>
+        <p data-i18n="contact_whatsapp_note">点击按钮打开 WhatsApp 聊天（请在部署前替换链接中的占位号码）。</p>
+        <!-- Placeholder link: replace YOUR_PHONE_NUMBER with your phone number in international format without "+", e.g. 8617316895054 -->
+        <a class="btn" href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+      </div>
 
-<div class="card">
-<h3>Email</h3>
-<p>lorabanzhitao@gmail.com</p>
-</div>
-</div>
-</main>
+      <div class="card">
+        <h3 data-i18n="contact_email">Email</h3>
+        <p>sales@example.com</p>
+      </div>
+    </div>
 
-<footer class="site-footer">
-<div class="container">
-<p>© <span id="year"></span> Couple Air Chess. 保留所有权利 / All rights reserved.</p>
-</div>
-</footer>
+  </main>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Couple Air Chess. <span data-i18n="footer_rights">保留所有权利 / All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
